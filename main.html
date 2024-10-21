@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<label for="fname">First Name:</label>
+    <label for="fname">First Name:</label>
     <input type="text" id="fname" name="fname" required />
     <br />
     <label for="lname">Last Name:</label>
@@ -20,18 +17,19 @@
     <input type="email" id="email" name="email" required />
     <br />
     <button id="submit-btn">Submit</button>
-	<!-- the entire body must be written by student -->
+
     <script type="text/javascript" src="./script.js">
-		let sol=document.getElementById("submit-btn");
-		let Name=document.getElementById("fname").value;
-		let lName=document.getElementById("lname").value;
-		let phn=document.getElementById("phone").value;
-		let emailId=document.getElementById("email").value;
-		sol.addEventListener("click",function(){
-			alert(` First Name: ${Name} Last Name: ${lName} Number: ${phn}Email ID:${emailId}`);
-		})
-</script>
+        let sol = document.getElementById("submit-btn");
 
+        sol.addEventListener("click", function(){
+            let Name = document.getElementById("fname").value;
+            let lName = document.getElementById("lname").value;
+            let phn = document.getElementById("phone").value;
+            let emailId = document.getElementById("email").value;
+
+            alert(`First Name: ${Name} \nLast Name: ${lName} \nNumber: ${phn} \nEmail ID: ${emailId}`);
+        });
+    </script>
 </body>
-
 </html>
+
